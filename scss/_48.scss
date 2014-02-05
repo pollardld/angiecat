@@ -1,0 +1,39 @@
+nav {
+	padding: 2.75rem 3.28125rem;
+
+	i {
+		margin-right: 2.2rem;
+	}
+}
+
+footer.footer {
+
+	blockquote {
+		display: inline;
+		float: left;
+		margin: 0 1.25%;
+		padding: 3.5rem 0 0;
+		text-align: left;
+	}
+
+	nav {
+		display: inline;
+		float: right;
+		margin: 0;
+		padding: 3.5rem 0 0;
+
+		i {
+			margin-right: .5rem;
+		}
+	}
+
+	.span2 {
+		display: inline;
+		float: left;
+		margin: 0 1.25%;
+
+		.tagline {
+			left: 0;
+		}
+	}
+}

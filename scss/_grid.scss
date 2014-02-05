@@ -1,0 +1,89 @@
+.span1 { @include column(12) }
+.span2 { @include column(12) }
+.span3 { @include column(12) }
+.span4 { @include column(12) }
+.span5 { @include column(12) }
+.span6 { @include column(12) }
+.span7 { @include column(12) }
+.span8 { @include column(12) }
+.span9 { @include column(12) }
+.span10 { @include column(12) }
+.span11 { @include column(12) }
+.span12 { @include column(12) }
+
+@media (min-width: 22em) {	
+	
+	.span12, main { 
+		max-width: 20em; 
+	}
+}
+
+@media (min-width: 30em) { 
+	
+	.span12, main { 
+		max-width: 28em; 
+	}
+}
+
+@media (min-width: 40em) { 
+
+	.span1 { @include column(1) }
+	.span2 { @include column(2) }
+	.span3 { @include column(4) }
+	.span4 { @include column(4) }
+	.span5 { @include column(4) }
+	.span6 { @include column(6) }
+	.span7 { @include column(8) }
+	.span8 { @include column(8) }
+	.span9 { @include column(8) }
+	.span10 { @include column(10) }
+	.span11 { @include column(11) }
+	.span12 { @include column(12) }
+	
+	.span12, main { 
+		max-width: 36em; 
+	}
+}
+
+@media (min-width: 48em) {
+
+	.span12, main {
+		max-width: 43em;
+	}
+}
+
+@media (min-width: 69.5em) { 
+
+	.span3 { @include column(3) }
+	.span5 { @include column(5) }
+	.span7 { @include column(7) }
+	.span9 { @include column(9) }
+																						
+	.spread {
+	    &> .span1 { @include pushpullwidth(1); }
+	    &> .span2 { @include pushpullwidth(2); }
+	    &> .span3 { @include pushpullwidth(3); }
+	    &> .span4 { @include pushpullwidth(4); }
+	    &> .span5 { @include pushpullwidth(5); }
+	    &> .span6 { @include pushpullwidth(6); }
+	    &> .span7 { @include pushpullwidth(7); }
+	    &> .span8 { @include pushpullwidth(8); }
+	    &> .span9 { @include pushpullwidth(9); }
+	    &> .span10  { @include pushpullwidth(10); }
+	    &> .span11  { @include pushpullwidth(11); }
+	    &> .span12  { @include pushpullwidth(12); }
+		&> *[class*="span"] {
+			&:nth-of-type(1) { @include pull(); } 
+			&:last-child { @include push(); }
+		}
+	}
+		
+	.span12, main { 
+		max-width: 62.5em; 
+	}
+
+	.span12 {
+		margin: 0;
+		width: 100%;
+	}
+}

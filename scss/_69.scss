@@ -1,0 +1,232 @@
+nav {
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 1.5rem;
+	width: auto;
+
+	i {
+		margin-right: .8125em;
+	}
+
+	form {
+		display: inline-block;
+	}
+}
+
+div.logo {
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.sub-head {
+	border-right: 1px solid #fff;
+	border-left: none;
+	border-top: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	clear: none;
+	float: left;
+	margin-right: 0;
+	padding: 2em 0;
+	width: 47.45rem;
+	
+	h1 {
+		font-size: .965em;
+		letter-spacing: .475em;
+		font-weight: 700;
+	}
+	
+}
+
+.mainnav {
+	border-left: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 1.625em 0 1.175em;
+	width: 47.45em;
+	
+	li {
+
+		&:after {
+			color: #a09f9f;
+			content: 'x';
+			font-family: $ovo;
+			font-size: .625em;
+			position: absolute;
+			right: -0.25em;
+			top: .5em;
+		}
+
+		&:first-of-type {
+
+			a {
+				padding-left: .75rem;
+			}
+		}
+
+		&:last-of-type {
+			a {
+				margin-right: 0;
+				padding-right: 1em;
+			}
+			
+			&:after {
+				content: '';
+			}
+		}
+		
+	}
+
+	a {
+		margin: 0 .675em;
+		padding: 0 1em;
+	
+		&:before {
+			background: transparent;
+			content: '';
+			height: 5px;
+			left: 0;
+			position: absolute;
+			top: 3.1em;
+			width: 100%;
+			@include vendor-prefix (transition, .3s all ease);
+		}
+		
+	}
+}
+
+.post {
+
+	.date {
+		height: 6.5em;
+		padding: 2.5em 0 0;
+		width: 9em;
+
+		&:after {
+			top: 7.75em;
+			right: 1.5em;
+		}
+
+		&:before {
+			top: 7.75em;
+			left: 1.5em;
+		}
+	}
+}
+
+aside {
+
+	#text-2, #text-3 {
+		height: 200px;
+		font-size: .825em;
+		padding: 70px 14px 20px;
+
+		h2 {
+			font-size: 1.125em;
+		}
+	}
+
+	#text-4, #text-5 {
+
+		p {
+			font-size: .8125em;
+		}
+
+		input {
+
+			&[type=email] {
+				font-size: 1.08em;
+			}
+
+			&[type=submit] {
+				font-size: .75em;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/*================= Sidebar Widget */
+
+.widget_execphp {
+
+	h2 {
+		font-size: .9375rem;
+	}
+
+	.execphpwidget {
+
+		p {
+			font-size: .8125em;
+		}
+	}
+
+	.the-time {
+		font-size: .875rem;
+	}
+
+	.the-title {
+		display: inline;
+		font-size: 1.0875rem;
+
+	}
+}
+
+.wpcf7-form {
+
+	.email, .name {
+		display: inline-block;
+		font-size: 1rem;
+		width: 47.5%;
+	}
+
+	.name {
+		margin-right: 5%;
+	}
+}
+
+footer.footer {
+
+	blockquote {
+		float: left;
+		font-size: 1rem;
+		margin: 0 1rem 0 0;
+		padding: 3.25em 0 0;
+		text-align: right;
+	}
+
+	nav {
+		float: left;
+		margin-left: 1rem;
+		padding: 3.25em 0 0;
+
+		i {
+			font-size: 16px;
+		}
+	}
+}
+
+.is-safari {
+	.sub-head {
+		width: 47.275rem;
+	}
+
+	.mainnav {
+		padding-bottom: 1.1875rem;
+		width: 47.275rem;
+	}
+}
+
+@-moz-document url-prefix() {
+	
+	.sub-head {
+		width: 47.275rem;
+	}
+
+	.mainnav {
+		padding-bottom: 1.125rem;
+		width: 47.275rem;
+	}
+}
